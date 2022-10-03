@@ -1,0 +1,307 @@
+:root{
+    --azul_suave: #8E7BEF;
+    --gris_muy_oscuro: #222222;
+    --amarillo_suave: #FCDA68;
+    --rosa_grisáceo_oscuro: #423F40;
+    --blanco: #FFFFFF;
+    --naranja_grisáceo_claro: #F9F5F2;
+}
+@font-face{
+    font-family: semibold;
+    src: url(archivo-semi-bold.ttf);
+    font-family: regular;
+    src: url(aariel-regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#experiencia_habilidades{
+    margin-top: 65px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--amarillo_suave);
+}
+
+body{
+    width: 85%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    font-family: semibold;
+    font-size: 18px;
+}
+
+header{
+    margin: 0;
+    width: auto;
+    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav{
+    display: flex;
+    gap: 55px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--gris_muy_oscuro);
+}
+
+a > samp {
+    color: var(--azul_suave);
+    font-family: semibold;
+    
+}
+#inicio{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.inicio_right > h1 {
+    font-size: 80px;
+}
+
+.inicio_right > p {
+    color: var(--rosa_grisáceo_oscuro)
+}
+
+
+.subsection{
+    margin-bottom: 25px;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.inicio_right p > samp{
+    color: var(--azul_suave);
+}
+
+.inicio_right p ~ p {
+    margin-bottom: 35px;
+    color: var(--rosa_grisáceo_oscuro);
+}
+
+.redes{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
+}
+.color_icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--azul_suave);
+}
+
+.color_icono > img{
+    width: 20px;
+    height: 20px;
+}
+
+.contactame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    width: 23rem;
+    height: 60px;
+    background-color: var(--azul_suave);
+    color: var(--blanco);
+    text-align: justify;
+    gap: 35px;
+}
+
+.contactame > p{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inicio_left{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+/*---------------------------------------------*/
+
+.conteine_experiencia_habilidade{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 15rem;
+} 
+
+.experiencia_habilidades_left > h2{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.experiencia_habilidades_left > p{
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.experiencia_habilidades_left > h3{
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+.experiencia_habilidades_right {
+    display: grid;
+    grid-template-columns: 20% 55.5%;
+
+}
+
+.fechas > h3 {
+    margin-top: 55px;
+    margin-bottom: 43px;
+    font-size: 24px;
+}
+.año{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid;
+}
+
+.especial{
+    margin-top: 40px;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+}
+
+#especial{
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+}
+.description {
+    margin-top: 85px;
+}
+.titulo{
+    border-bottom: 1px solid;
+}
+
+.titulo > h3 {
+    margin-top: 15px;
+}
+.titulo_especial{
+    margin-top: 15px;
+}
+
+/*---------------------------------------------*/
+
+.habilidades_iconos{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+#iconos{
+    margin-left: 17px;
+    margin-right: 17px;
+    width: 9rem;
+    height: auto;
+}
+
+
+#portafolio > h2{
+    margin-top: 50px;
+    font-size: 40px;
+}
+#position > p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--azul_suave);
+}
+
+.img_position{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#contacto > h2{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.cotaine_numero_email{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.cotaine_numero_email{
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+
+#contenedor_icono_phone, #contenedor_icono_email{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 135px;
+    border-radius: 30%;
+    background-color: var(--naranja_grisáceo_claro);
+}
+
+#numero, #email{
+    text-align: center;
+}
+
+#numero > p, #email > p{
+    margin-top: 25px;
+    color: var(--rosa_grisáceo_oscuro);
+}
+
+
+#contenedor_icono_phone > img, #contenedor_icono_email > img{
+    width: 65px;
+    height: 65px;
+}
+
+
+footer > p {
+
+    margin: 50px;
+    text-align: center;
+    color: var(--azul_suave);
+} 
+
+/* Mobil*/
+
+@media screen and (max-width:800px){
+    body{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        width: 65vw;
+    }
+}
